@@ -46,15 +46,6 @@ install.packages(c("dplyr", "ggplot2", "readxl", "rmarkdown", "shiny"))
 
 
 
-| #   | بخش                               | موضوع                                    | کد R                                  | فایل PDF                                |
-| --- | --------------------------------- | ---------------------------------------- | ------------------------------------- | --------------------------------------- |
-| 1   | [Sec_1_1.md](Section1/Sec_1_1.md) | آشنایی با محیط R و RStudio 🔬            | [Sec_1_1.R](Codes/Section1/Sec_1_1.R) | [Sec_1_1.pdf](PDF/Section1/Sec_1_1.pdf) |
-| 2   | [Sec_1_2.md](Section1/Sec_1_2.md) | انواع اشیا در R؛ بردارها و لیست‌ها 🧬    | [Sec_1_2.R](Codes/Section1/Sec_1_2.R) | [Sec_1_2.pdf](PDF/Section1/Sec_1_2.pdf) |
-| 3   | [Sec_1_3.md](Section1/Sec_1_3.md) | انواع اشیا در R؛ داده‌های چارچوب‌دار  📊 | [Sec_1_3.R](Codes/Section1/Sec_1_3.R) | [Sec_1_3.pdf](PDF/Section1/Sec_1_3.pdf) |
-
-
-
-
 <div align="right" dir="rtl">
 
 
