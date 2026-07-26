@@ -66,9 +66,9 @@
 
 | #   | بخش                               | موضوع                                    | کد R                                  |
 | --- | --------------------------------- | ---------------------------------------- | ------------------------------------- |
-| 1      | [Sec_2_1.md](Section2/Sec_2_1.md) |                                          |                                          |
-|    2   | [Sec_2_2.md](Section2/Sec_2_2.md) |                                          |                                          |
-|   3    | [Sec_2_3.md](Section2/Sec_2_3.md) |                                          |                                          |
+| 1      | [Sec_2_1.md](Section2/Sec_2_1.md) |                                          |  [Sec_2_1.R](Codes/Section2/Sec_2_1.R) |
+|    2   | [Sec_2_2.md](Section2/Sec_2_2.md) |                                          | [Sec_2_2.R](Codes/Section2/Sec_2_2.R) |
+|   3    | [Sec_2_3.md](Section2/Sec_2_3.md) |                                          | [Sec_2_3.R](Codes/Section2/Sec_2_3.R) |
 
 
 
@@ -81,9 +81,9 @@
 
 | #   | بخش                               | موضوع                                    | کد R                                  |
 | --- | --------------------------------- | ---------------------------------------- | ------------------------------------- |
-| 1     | [Sec_3_1.md](Section3/Sec_3_1.md) |                                          |                                          |
-|  2    | [Sec_3_2.md](Section3/Sec_3_2.md) |                                          |                                          |
-| 3     | [Sec_3_3.md](Section3/Sec_3_3.md) |                                          |                                          |
+| 1     | [Sec_3_1.md](Section3/Sec_3_1.md) |                                          |  [Sec_3_1.R](Codes/Section3/Sec_3_1.R) |
+|  2    | [Sec_3_2.md](Section3/Sec_3_2.md) |                                          |  [Sec_3_2.R](Codes/Section3/Sec_3_2.R) |
+| 3     | [Sec_3_3.md](Section3/Sec_3_3.md) |                                          |  [Sec_3_3.R](Codes/Section3/Sec_3_3.R) |
 
 
 
@@ -96,9 +96,9 @@
 
 | #   | بخش                               | موضوع                                    | کد R                                  |
 | --- | --------------------------------- | ---------------------------------------- | ------------------------------------- |
-| 1    | [Sec_4_1.md](Section4/Sec_4_1.md) |                                          |                                          |
-|       | [Sec_4_2.md](Section4/Sec_4_2.md) |                                          |                                          |
-|       | [Sec_4_3.md](Section4/Sec_4_3.md) |                                          |                                          |
+| 1    | [Sec_4_1.md](Section4/Sec_4_1.md) |                                          |  [Sec_4_1.R](Codes/Section1/Sec_4_1.R) |
+|       | [Sec_4_2.md](Section4/Sec_4_2.md) |                                          |  [Sec_4_2.R](Codes/Section1/Sec_4_2.R) |
+|       | [Sec_4_3.md](Section4/Sec_4_3.md) |                                          |  [Sec_4_3.R](Codes/Section1/Sec_4_3.R) |
 
 </div>
 
