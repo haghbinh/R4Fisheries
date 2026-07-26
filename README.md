@@ -1,8 +1,6 @@
-<div align="right" dir="rtl">
-
 # 🐟 کارگاه کاربرد R در پژوهش‌های شیلات و آبزیان
 
-</div>
+
 
 <div align="center">
 
