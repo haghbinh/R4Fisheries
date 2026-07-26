@@ -103,6 +103,20 @@
 </div>
 
 ---
+## 🚀 شروع کار
+
+**گام اول:** نصب R از [cran.r-project.org](https://cran.r-project.org/)
+
+**گام دوم:** نصب RStudio از [posit.co/download/rstudio-desktop](https://posit.co/download/rstudio-desktop/)
+
+**گام سوم:** نصب پکیج‌های مورد نیاز در R
+
+```r
+install.packages(c("dplyr", "ggplot2", "readxl", "rmarkdown", "shiny"))
+```
+
+---
+
 ## 📌 تهیه و تدوین: دکتر حسین‌ حق‌بین
 ### دانشگاه خلیج فارس   
 
