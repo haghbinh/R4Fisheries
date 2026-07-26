@@ -1,1 +1,65 @@
-ششش
+<div align="right" dir="rtl">
+
+# 🐟 کارگاه کاربرد R در پژوهش‌های شیلات و آبزیان
+
+</div>
+
+<div align="center">
+
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![RStudio](https://img.shields.io/badge/RStudio-75AADB?style=for-the-badge&logo=rstudio&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Duration](https://img.shields.io/badge/Duration-12%20Hours-orange?style=for-the-badge)
+![Level](https://img.shields.io/badge/Level-PhD%20Researchers-8B0000?style=for-the-badge)
+
+</div>
+
+---
+
+<div align="right" dir="rtl">
+
+## 📌 معرفی دوره
+
+این کارگاه **۱۲ ساعته** برای **پژوهشگران دکتری** حوزه شیلات، بیولوژی دریا و اکولوژی آبزیان طراحی شده است. هدف، توانمندسازی پژوهشگران در استفاده از زبان برنامه‌نویسی **R** برای تحلیل داده‌های زیستی است — از محاسبه شاخص‌های بیومتریک و مدل‌سازی روابط طول-وزن گرفته تا آنالیز آماری پیشرفته و مصورسازی حرفه‌ای داده‌های میدانی.
+
+> **چرا R؟** برخلاف Excel و SPSS، R رایگان، قابل تکرار (reproducible) و استاندارد علمی در مجلات بین‌المللی است.
+
+</div>
+
+---
+
+<div align="right" dir="rtl">
+
+## 🎯 اهداف یادگیری
+
+پس از پایان این دوره، پژوهشگر قادر خواهد بود:
+
+- محیط R و RStudio را راه‌اندازی و مدیریت کند
+- داده‌های بیومتریک را وارد، پاک‌سازی و سازماندهی نماید
+- شاخص‌های زیستی مانند ضریب چاقی (K) و رابطه طول-وزن را محاسبه کند
+- آزمون‌های آماری (رگرسیون، ANOVA) را بر روی داده‌های آبزیان اجرا کند
+- نمودارهای علمی با `ggplot2` تولید و گزارش R Markdown بسازد
+
+</div>
+
+---
+
+<div align="right" dir="rtl">
+
+## 👥 مخاطبان و پیش‌نیازها
+
+| | |
+|---|---|
+| **مخاطب** | دانشجویان دکتری و پژوهشگران شیلات و آبزیان |
+| **پیش‌نیاز آماری** | آشنایی مقدماتی با آمار توصیفی |
+| **پیش‌نیاز برنامه‌نویسی** | ندارد (از صفر آموزش داده می‌شود) |
+
+</div>
+
+---
+
+<div align="right" dir="rtl">
+
+## 📁ساختار مخزن
+
+</div>
