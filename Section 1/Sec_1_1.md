@@ -85,7 +85,9 @@
 
 پس از باز کردن RStudio، معمولاً با چهار ناحیه اصلی روبه‌رو می‌شوید. چینش دقیق ممکن است بسته به تنظیمات نرم‌افزار کمی متفاوت باشد.
 
-![[Pasted image 20260726184029.png|1178]]
+<img src="img/img20260726184029.png" alt="Diffrent perspective of objects." width="1024" height="423">
+
+
 ---
 ## پنل Console
 
