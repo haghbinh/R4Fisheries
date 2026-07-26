@@ -227,26 +227,6 @@ project_name/
 
 پنجره Plots نمودارهای تولیدشده در R را نمایش می‌دهد.
 
-مثال ساده:
-
-```r
-days <- c(0, 15, 30, 45, 60)
-weight <- c(2.1, 4.8, 8.6, 12.9, 18.5)
-
-plot(days, weight)
-```
-
-این کد نمودار پراکنش وزن میگو در طول زمان را نمایش می‌دهد.
-
-برای افزودن عنوان و برچسب محورها:
-
-```r
-plot(days, weight,
-     main = "Shrimp growth over time",
-     xlab = "Day",
-     ylab = "Weight (g)")
-```
-
 ---
 
 ## پنل Packages

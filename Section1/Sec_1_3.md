@@ -332,7 +332,7 @@ shrimp_data
 ### فایل tab-delimited
 
 ```r
-shrimp_data <- read.table("shrimp_data.txt", header = TRUE, sep = "\t")
+shrimp_data <- read.table("shrimp_data_t.txt", header = TRUE, sep = "\t")
 ```
 
 ### فایل با جداکننده کاما
@@ -340,13 +340,13 @@ shrimp_data <- read.table("shrimp_data.txt", header = TRUE, sep = "\t")
 اگرچه برای فایل CSV معمولاً از `()read.csv` استفاده می‌شود، ولی می‌توان با `()read.table` نیز آن را خواند:
 
 ```r
-shrimp_data <- read.table("shrimp_data.csv", header = TRUE, sep = ",")
+shrimp_data <- read.table("dataset/shrimp_data.csv", header = TRUE, sep = ",")
 ```
 
 ### فایل با جداکننده نقطه ویرگول
 
 ```r
-shrimp_data <- read.table("shrimp_data.txt", header = TRUE, sep = ";")
+shrimp_data <- read.table("dataset/shrimp_data_v.txt", header = TRUE, sep = ";")
 ```
 
 ---
@@ -360,7 +360,7 @@ shrimp_data <- read.table("shrimp_data.txt", header = TRUE, sep = ";")
 اگر فایل نام ستون نداشته باشد:
 
 ```r
-shrimp_data <- read.table("shrimp_data.txt", header = FALSE)
+shrimp_data <- read.table("dataset/shrimp_data.txt", header = FALSE)
 ```
 
 در این حالت R خودش نام‌هایی مانند `V1`, `V2`, `V3` تولید می‌کند.
@@ -390,8 +390,8 @@ shrimp_data <- read.table("C:/Users/Haghbin/Desktop/R/shrimp_data.txt", header =
 بعد از خواندن داده، همیشه باید ساختار آن بررسی شود:
 
 ```r
-str(shrimp_data)
-names(shrimp_data)
+	str(shrimp_data)
+	names(shrimp_data)
 ```
 
 ```r
@@ -535,19 +535,19 @@ library(readxl)
 ### خواندن فایل Excel
 
 ```r
-shrimp_data <- read_excel("shrimp_data.xlsx")
+shrimp_data <- read_excel("dataset/shrimp_data.xlsx")
 ```
 
 اگر فایل چند sheet داشته باشد، می‌توان sheet را مشخص کرد.
 
 ```r
-shrimp_data <- read_excel("shrimp_data.xlsx", sheet = 1)
+shrimp_data <- read_excel("dataset/shrimp_data.xlsx", sheet = 1)
 ```
 
 یا با نام sheet:
 
 ```r
-shrimp_data <- read_excel("shrimp_data.xlsx", sheet = "GrowthData")
+shrimp_data <- read_excel("dataset/shrimp_data.xlsx", sheet = "GrowthData")
 ```
 
 ---

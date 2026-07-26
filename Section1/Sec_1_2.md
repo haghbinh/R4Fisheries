@@ -372,15 +372,15 @@ Station_A Station_B Station_C
 اگر فایل متنی ساده‌ای شامل وزن‌ها وجود داشته باشد، می‌توان آن را با `()scan` خواند.
 
 ```r
-weights <- scan("weights.txt")
+weights <- scan("dataset/weights.txt")
 weights
 ```
 
 اگر داده‌ها متنی باشند:
 
 ```r
-species <- scan("species.txt", what = character())
-species
+Station <- scan("dataset/Station.txt", what = character())
+Station
 ```
 
 تابع `()scan` برای داده‌های ساده مناسب است. برای داده‌های جدولی کامل، در بخش‌های بعدی از توابع تخصصی‌تر ورود داده استفاده خواهد شد.
@@ -553,7 +553,6 @@ selected_weight
 ```r
 dissolved_oxygen <- c(5.8, 4.9, 6.2, 5.1)
 names(dissolved_oxygen) <- c("Station_A", "Station_B", "Station_C", "Station_D")
-
 dissolved_oxygen
 ```
 
@@ -821,7 +820,6 @@ $$
 
 ```r
 dissolved_oxygen <- c(5.8, 4.9, 6.2, 5.1, 3.8)
-
 oxygen_ok <- dissolved_oxygen >= 5
 oxygen_ok
 ```
@@ -868,7 +866,6 @@ mean(oxygen_ok) * 100
 
 ```r
 mean_weight <- 16.06
-
 cat("Mean final weight:", mean_weight, "g\n")
 ```
 
