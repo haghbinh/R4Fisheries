@@ -1,0 +1,2 @@
+Mean final weight: 16.06 g
+ Standard deviation: 0.91 g
