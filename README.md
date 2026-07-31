@@ -67,9 +67,8 @@ install.packages(c("dplyr", "ggplot2", "readxl", "rmarkdown", "shiny"))
 
 | #   | بخش                               | موضوع                                    | کد R                                  | فایل PDF                                |
 | --- | --------------------------------- | ---------------------------------------- | ------------------------------------- | --------------------------------------- |
-| 1      | [Sec_2_1.md](Section2/Sec_2_1.md) |                                          |  [Sec_2_1.R](Codes/Section2/Sec_2_1.R) |[Sec_2_1.pdf](PDF/Section2/Sec_2_1.pdf) |
-|    2   | [Sec_2_2.md](Section2/Sec_2_2.md) |                                          | [Sec_2_2.R](Codes/Section2/Sec_2_2.R) | [Sec_2_2.pdf](PDF/Section2/Sec_2_2.pdf) |
-|   3    | [Sec_2_3.md](Section2/Sec_2_3.md) |                                          | [Sec_2_3.R](Codes/Section2/Sec_2_3.R) | [Sec_2_3.pdf](PDF/Section2/Sec_2_3.pdf) |
+| 1      | [Sec_2_1.md](Section2/Sec_2_1.md) |    آمار توصیفی و خلاصه‌سازی داده‌ها  |  [Sec_2_1.R](Codes/Section2/Sec_2_1.R) |[Sec_2_1.pdf](PDF/Section2/Sec_2_1.pdf) |
+|    2   | [Sec_2_2.md](Section2/Sec_2_2.md) |   رسم نمودارهای علمی   | [Sec_2_2.R](Codes/Section2/Sec_2_2.R) | [Sec_2_2.pdf](PDF/Section2/Sec_2_2.pdf) |
 
 
 
