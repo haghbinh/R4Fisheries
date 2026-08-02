@@ -11,7 +11,7 @@
 
 <center><img src="img/Pasted image 20260731194425.png"  width="600" ></center>
 
-در این بخش از دیتاست واقعی **Abalone Dataset** از مخزن UCI استفاده می‌کنیم. دیتاست Abalone شامل اندازه‌گیری‌های زیست‌سنجی روی آبزی **آبالون** است. هدف رایج در این داده‌ها، بررسی رابطه بین ویژگی‌های مورفومتریک و سن تقریبی آبزی است.
+در این بخش از دیتاست واقعی **Abalone** از مخزن UCI استفاده می‌کنیم. دیتاست Abalone شامل اندازه‌گیری‌های زیست‌سنجی روی آبزی **آبالون** است. هدف رایج در این داده‌ها، بررسی رابطه بین ویژگی‌های مورفومتریک و سن تقریبی آبزی است.
 
 سن تقریبی آبالون معمولاً از رابطه زیر محاسبه می‌شود:
 
@@ -107,11 +107,11 @@ str(abalone$Sex)
 
 سطوح متغیر `Sex` عبارت‌اند از:
 
-| کد | مفهوم |
-|---|---|
-| F | Female |
-| I | Infant |
-| M | Male |
+| کد  | مفهوم  |
+| --- | ------ |
+| F   | Female |
+| I   | Infant |
+| M   | Male   |
 
 ---
 
@@ -310,10 +310,8 @@ sapply(numeric_vars, median)
 خروجی:
 
 ```
-        Length       Diameter         Height   Whole_weight Shucked_weight Viscera_weight 
-        0.5450         0.4250         0.1400         0.7995         0.3360         0.1710 
-  Shell_weight          Rings            Age 
-        0.2340         9.0000        10.5000
+Length    Diameter     Height   Whole_weight   Shucked_weight   Viscera_weight    Shell_weight    Rings      Age
+0.5450     0.4250      0.1400     0.7995          0.3360           0.1710          0.2340       9.0000    10.5000 
 ```
 
 ---
@@ -372,11 +370,11 @@ sapply(numeric_vars, max)
 ```r
 desc_stats <- data.frame(
   Variable = names(numeric_vars),
-  Mean = sapply(numeric_vars, mean),
-  Median = sapply(numeric_vars, median),
-  SD = sapply(numeric_vars, sd),
-  Min = sapply(numeric_vars, min),
-  Max = sapply(numeric_vars, max)
+  Mean = round(sapply(numeric_vars, mean), 3),
+  Median = round(sapply(numeric_vars, median), 3),
+  SD = round(sapply(numeric_vars, sd), 3),
+  Min = round(sapply(numeric_vars, min), 3),
+  Max = round(sapply(numeric_vars, max), 3)
 )
 
 desc_stats
@@ -385,50 +383,16 @@ desc_stats
 خروجی:
 
 ```
-                      Variable       Mean  Median        SD    Min     Max
-Length                  Length  0.5239921  0.5450 0.1200929 0.0750  0.8150
-Diameter              Diameter  0.4078813  0.4250 0.0992399 0.0550  0.6500
-Height                  Height  0.1395164  0.1400 0.0418271 0.0000  1.1300
-Whole_weight      Whole_weight  0.8287422  0.7995 0.4903890 0.0020  2.8255
-Shucked_weight  Shucked_weight  0.3593675  0.3360 0.2219634 0.0010  1.4880
-Viscera_weight  Viscera_weight  0.1805936  0.1710 0.1096143 0.0005  0.7600
-Shell_weight      Shell_weight  0.2388319  0.2340 0.1392038 0.0015  1.0050
-Rings                    Rings  9.9336845  9.0000 3.2241690 1.0000 29.0000
-Age                        Age 11.4336845 10.5000 3.2241690 2.5000 30.5000
-```
-
----
-
-## گرد کردن جدول آمار توصیفی
-
-در گزارش‌های علمی، معمولاً اعداد با تعداد رقم اعشار مشخص گزارش می‌شوند.
-
-```r
-desc_stats_round <- data.frame(
-  Variable = names(numeric_vars),
-  Mean = round(sapply(numeric_vars, mean), 3),
-  Median = round(sapply(numeric_vars, median), 3),
-  SD = round(sapply(numeric_vars, sd), 3),
-  Min = round(sapply(numeric_vars, min), 3),
-  Max = round(sapply(numeric_vars, max), 3)
-)
-
-desc_stats_round
-```
-
-خروجی:
-
-```
-                      Variable   Mean Median    SD   Min    Max
-Length                  Length  0.524  0.545 0.120 0.075  0.815
-Diameter              Diameter  0.408  0.425 0.099 0.055  0.650
-Height                  Height  0.140  0.140 0.042 0.000  1.130
-Whole_weight      Whole_weight  0.829  0.799 0.490 0.002  2.825
-Shucked_weight  Shucked_weight  0.359  0.336 0.222 0.001  1.488
-Viscera_weight  Viscera_weight  0.181  0.171 0.110 0.001  0.760
-Shell_weight      Shell_weight  0.239  0.234 0.139 0.002  1.005
-Rings                    Rings  9.934  9.000 3.224 1.000 29.000
-Age                        Age 11.434 10.500 3.224 2.500 30.500
+                 Mean Median    SD   Min    Max
+Length          0.524  0.545 0.120 0.075  0.815
+Diameter        0.408  0.425 0.099 0.055  0.650
+Height          0.140  0.140 0.042 0.000  1.130
+Whole_weight    0.829  0.799 0.490 0.002  2.825
+Shucked_weight  0.359  0.336 0.222 0.001  1.488
+Viscera_weight  0.181  0.171 0.110 0.000  0.760
+Shell_weight    0.239  0.234 0.139 0.002  1.005
+Rings           9.934  9.000 3.224 1.000 29.000
+Age            11.434 10.500 3.224 2.500 30.500
 ```
 
 ---
@@ -528,7 +492,7 @@ aggregate(Age ~ Sex, data = abalone, mean)
 
 ---
 
-## محاسبه چند شاخص همزمان با `aggreate()g`
+## محاسبه چند شاخص همزمان با `aggreate()
 
 تابع `()aggregate` به‌صورت پایه‌ای معمولاً یک تابع را روی یک متغیر اعمال می‌کند. برای محاسبه چند شاخص، می‌توان از یک تابع سفارشی استفاده کرد.
 
@@ -750,42 +714,5 @@ age_cor_sorted
 - متغیر `Shucked_weight` نسبت به سایر متغیرهای وزنی، همبستگی کمتری با سن دارد.
 
 از منظر شیلات و آبزی‌پروری، این نتیجه مهم است؛ زیرا نشان می‌دهد شاخص‌های مربوط به صدف ممکن است برای برآورد سن آبالون اطلاعات مفیدتری نسبت به وزن گوشت فراهم کنند.
-
----
-
-## تهیه جدول نهایی برای گزارش توصیفی
-
-در یک مقاله یا گزارش پژوهشی، معمولاً آمار توصیفی را به‌صورت جدول نهایی گزارش می‌کنیم.
-
-```r
-final_desc <- data.frame(
-  Variable = names(numeric_vars),
-  N = sapply(numeric_vars, length),
-  Mean = round(sapply(numeric_vars, mean), 3),
-  SD = round(sapply(numeric_vars, sd), 3),
-  Median = round(sapply(numeric_vars, median), 3),
-  Min = round(sapply(numeric_vars, min), 3),
-  Max = round(sapply(numeric_vars, max), 3)
-)
-
-rownames(final_desc) <- NULL
-
-final_desc
-```
-
-خروجی:
-
-```
-         Variable    N   Mean    SD Median   Min    Max
-1          Length 4177  0.524 0.120  0.545 0.075  0.815
-2        Diameter 4177  0.408 0.099  0.425 0.055  0.650
-3          Height 4177  0.140 0.042  0.140 0.000  1.130
-4    Whole_weight 4177  0.829 0.490  0.799 0.002  2.825
-5  Shucked_weight 4177  0.359 0.222  0.336 0.001  1.488
-6  Viscera_weight 4177  0.181 0.110  0.171 0.001  0.760
-7    Shell_weight 4177  0.239 0.139  0.234 0.002  1.005
-8           Rings 4177  9.934 3.224  9.000 1.000 29.000
-9             Age 4177 11.434 3.224 10.500 2.500 30.500
-```
 
 ---

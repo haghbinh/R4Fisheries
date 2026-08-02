@@ -40,7 +40,7 @@
 
 ## ساخت `data.frame` با داده‌های ساده
 
-برای ساخت یک `data.frame` از تابع `data.frame()` استفاده می‌شود.
+برای ساخت یک `data.frame` از تابع `()data.frame` استفاده می‌شود.
 
 مثال زیر داده‌های ساده یک آزمایش رشد میگو را نشان می‌دهد:
 
@@ -58,7 +58,7 @@ shrimp_data
 
 خروجی به‌شکل یک جدول خواهد بود:
 
-```r
+```
   pond_id  treatment initial_weight final_weight survival_rate
 1      P1    Control            2.1         15.2            94
 2      P2 Probiotic            2.3         16.8            96
@@ -111,7 +111,7 @@ shrimp_data
 
 ### طول همه ستون‌ها باید برابر باشد
 
-در هنگام ساخت `data.frame`، تعداد عناصر همه ستون‌ها باید یکسان باشد. اگر یک ستون ۴ مقدار داشته باشد و ستون دیگر ۵ مقدار، R خطا می‌دهد.
+در هنگام ساخت `data.frame`، تعداد عناصر همه ستون‌ها باید یکسان باشد. اگر یک ستون 3 مقدار داشته باشد و ستون دیگر 2 مقدار، R خطا می‌دهد.
 
 نمونه نادرست:
 
@@ -138,7 +138,7 @@ class(shrimp_data)
 [1] "data.frame"
 ```
 
-برای مشاهده ساختار کلی:
+برای مشاهده ساختار هر ستون:
 
 ```r
 str(shrimp_data)
@@ -146,7 +146,7 @@ str(shrimp_data)
 
 خروجی نمونه:
 
-```r
+```
 'data.frame':	4 obs. of  5 variables:
  $ pond_id       : chr  "P1" "P2" "P3" "P4"
  $ treatment     : chr  "Control" "Probiotic" "Control" "Probiotic"
@@ -155,7 +155,7 @@ str(shrimp_data)
  $ survival_rate : num  94 96 91 95
 ```
 
-برای پژوهشگر، `str()` یکی از سریع‌ترین و مفیدترین ابزارها برای بررسی ساختار داده است.
+برای پژوهشگر، `()str` یکی از سریع‌ترین و مفیدترین ابزارها برای بررسی ساختار داده است.
 
 ---
 
@@ -215,7 +215,7 @@ names(shrimp_data)
 
 ## تغییر نام ستون‌ها
 
-اگر بخواهید نام ستون‌ها را تغییر دهید، می‌توانید از `names()` استفاده کنید.
+اگر بخواهید نام ستون‌ها را تغییر دهید، می‌توانید از `()names` استفاده کنید.
 
 ```r
 shrimp_data <- data.frame(
@@ -244,7 +244,7 @@ names(shrimp_data)[3] <- "weight_final"
 
 ---
 
-## ساخت یک `data.frame` واقعی‌تر برای داده‌های شیلاتی
+## ساخت یک `data.frame` واقعی‌
 
 مثال زیر داده‌های ساده کیفیت آب و رشد در چند استخر را نشان می‌دهد:
 
@@ -262,7 +262,7 @@ pond_data <- data.frame(
 pond_data
 ```
 
-```r
+```
   pond_id treatment initial_weight final_weight temperature salinity dissolved_oxygen
 1      P1   Control            2.0         14.8        28.4       18              5.6
 2      P2   Control            2.1         15.1        28.7       19              5.4
@@ -277,7 +277,7 @@ pond_data
 
 ## ورود داده‌ها با `()read.table` 📥
 
-در پروژه‌های واقعی معمولاً داده‌ها از قبل در فایل ذخیره شده‌اند و پژوهشگر آن‌ها را از فایل وارد R می‌کند. یکی از توابع پایه برای خواندن داده‌های متنی جدولی، `read.table()` است.
+در پروژه‌های واقعی معمولاً داده‌ها از قبل در فایل ذخیره شده‌اند و پژوهشگر آن‌ها را از فایل وارد R می‌کند. یکی از توابع پایه برای خواندن داده‌های متنی جدولی، `()read.table` است.
 
 این تابع برای فایل‌هایی مناسب است که به‌صورت متنی ذخیره شده‌اند؛ مانند:
 
@@ -394,7 +394,7 @@ shrimp_data <- read.table("C:/Users/Haghbin/Desktop/R/shrimp_data.txt", header =
 	names(shrimp_data)
 ```
 
-```r
+```
 > str(shrimp_data)
 'data.frame':	4 obs. of  4 variables:
  $ pond_id       : chr  "P1" "P2" "P3" "P4"
@@ -694,7 +694,7 @@ write.table(pond_data,
             
 ```
 خروجی در R
-```r
+```
 > class(pond_data)
 [1] "data.frame"
 
