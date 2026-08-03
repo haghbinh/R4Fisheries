@@ -20,7 +20,7 @@ abalone <- read.csv(
 abalone$Sex <- factor(abalone$Sex, levels = c("M", "F", "I"), labels = c("Male", "Female", "Infant"))
 abalone$Age <- abalone$Rings + 1.5
 
-# install.packages("corrplot","ggplot2","plotly")
+# install.packages(c("corrplot","ggplot2","plotly"))
 library(corrplot)
 library(ggplot2)
 library(plotly)
@@ -33,11 +33,10 @@ barplot(
   main = "Frequency of Abalone by Sex",
   xlab = "Sex Group",
   ylab = "Count",
-  col = c("royalblue", "hotpink", "chartreuse4"),
-  border = "black",
-  ylim = c(0, 1800)
+  col = c("royalblue", "hotpink", "chartreuse4")
 )
 
+boxplot(abalone$Whole_weight)
 
 boxplot(
   Whole_weight ~ Sex,
@@ -166,4 +165,26 @@ ggplot(abalone, aes(x = Length, y = Whole_weight, color = Sex)) +
     title = "Abalone Growth: Length vs. Whole Weight",
     x = "Length (mm)",
     y = "Whole Weight (g)"
+  )
+
+
+
+plot_ly(
+  data = abalone,
+  x = ~Length,
+  y = ~Diameter,
+  z = ~Whole_weight,
+  color = ~Sex,
+  colors = c("blue", "red", "green"),
+  type = "scatter3d",
+  mode = "markers",
+  marker = list(size = 3, opacity = 0.6)
+) %>%
+  layout(
+    title = "Interactive 3D Morphometrics of Abalone",
+    scene = list(
+      xaxis = list(title = "Length (mm)"),
+      yaxis = list(title = "Diameter (mm)"),
+      zaxis = list(title = "Whole Weight (g)")
+    )
   )

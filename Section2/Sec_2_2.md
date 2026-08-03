@@ -31,7 +31,7 @@ abalone <- read.csv(
 abalone$Sex <- factor(abalone$Sex, levels = c("M", "F", "I"), labels = c("Male", "Female", "Infant"))
 abalone$Age <- abalone$Rings + 1.5
 
-# install.packages("corrplot","ggplot2","plotly")
+# install.packages(c("corrplot","ggplot2","plotly"))
 library(corrplot)
 library(ggplot2)
 library(plotly)

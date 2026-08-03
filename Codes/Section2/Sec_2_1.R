@@ -57,19 +57,8 @@ sapply(numeric_vars, sd)
 sapply(numeric_vars, min)
 sapply(numeric_vars, max)
 
+
 desc_stats <- data.frame(
-  Variable = names(numeric_vars),
-  Mean = sapply(numeric_vars, mean),
-  Median = sapply(numeric_vars, median),
-  SD = sapply(numeric_vars, sd),
-  Min = sapply(numeric_vars, min),
-  Max = sapply(numeric_vars, max)
-)
-
-desc_stats
-
-desc_stats_round <- data.frame(
-  Variable = names(numeric_vars),
   Mean = round(sapply(numeric_vars, mean), 3),
   Median = round(sapply(numeric_vars, median), 3),
   SD = round(sapply(numeric_vars, sd), 3),
@@ -77,7 +66,7 @@ desc_stats_round <- data.frame(
   Max = round(sapply(numeric_vars, max), 3)
 )
 
-desc_stats_round
+desc_stats
 
 aggregate(Whole_weight ~ Sex, data = abalone, mean)
 aggregate(Length ~ Sex, data = abalone, mean)
