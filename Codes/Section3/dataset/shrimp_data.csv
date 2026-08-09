@@ -1,0 +1,7 @@
+experimental_group,shrimp_weight,shrimp_length,survival_rate,bacterial_count,sampling_time
+Control,11.8,9.4,84,4100,Day0
+Control,13.2,10.1,86,3900,Day14
+Probiotic,12.1,9.6,88,3100,Day0
+Probiotic,15.4,11.2,93,2400,Day14
+Synbiotic,12.3,9.7,89,2900,Day0
+Synbiotic,16.1,11.8,96,1900,Day14

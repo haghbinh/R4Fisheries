@@ -81,9 +81,9 @@ install.packages(c("dplyr", "ggplot2", "readxl", "rmarkdown", "shiny"))
 
 | #   | بخش                               | موضوع                                    | کد R                                  | فایل PDF                                |
 | --- | --------------------------------- | ---------------------------------------- | ------------------------------------- | --------------------------------------- |
-| 1     | [Sec_3_1.md](Section3/Sec_3_1.md) |                                          |  [Sec_3_1.R](Codes/Section3/Sec_3_1.R) | [Sec_3_1.pdf](PDF/Section3/Sec_3_1.pdf) |
-|  2    | [Sec_3_2.md](Sec_3_1.md) |                                          |  [Sec_3_2.R](Codes/Section3/Sec_3_2.R) | [Sec_3_2.pdf](PDF/Section3/Sec_3_2.pdf) |
-| 3     | [Sec_3_3.md](Section3/Sec_3_3.md) |                                          |  [Sec_3_3.R](Codes/Section3/Sec_3_3.R) | [Sec_3_3.pdf](PDF/Section3/Sec_3_3.pdf) |
+| 1     | [Sec_3_1.md](Section3/Sec_3_1.md) |   منطق آزمون‌های آماری   |  [Sec_3_1.R](Codes/Section3/Sec_3_1.R) | [Sec_3_1.pdf](PDF/Section3/Sec_3_1.pdf) |
+|  2    | [Sec_3_2.md](Sec_3_1.md) |   آزمون‌های مقایسه میانگین   |  [Sec_3_2.R](Codes/Section3/Sec_3_2.R) | [Sec_3_2.pdf](PDF/Section3/Sec_3_2.pdf) |
+| 3     | [Sec_3_3.md](Section3/Sec_3_3.md) |   همبستگی و رگرسیون خطی  |  [Sec_3_3.R](Codes/Section3/Sec_3_3.R) | [Sec_3_3.pdf](PDF/Section3/Sec_3_3.pdf) |
 
 
 
