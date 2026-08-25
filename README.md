@@ -98,7 +98,7 @@ install.packages(c("dplyr", "ggplot2", "readxl", "rmarkdown", "shiny"))
 | --- | --------------------------------- | ---------------------------------------- | ------------------------------------- | --------------------------------------- |
 | 1    | [Sec_4_1.md](Section4/Sec_4_1.md) |                                          |  [Sec_4_1.R](Codes/Section1/Sec_4_1.R) |[Sec_4_1.pdf](PDF/Section4/Sec_4_1.pdf) |
 |       | [Sec_4_2.md](Section4/Sec_4_2.md) |                                          |  [Sec_4_2.R](Codes/Section1/Sec_4_2.R) |[Sec_4_2.pdf](PDF/Section4/Sec_4_2.pdf) |
-|       | [Sec_4_3.md](Section4/Sec_4_3.md) |                                          |  [Sec_4_3.R](Codes/Section1/Sec_4_3.R) |[Sec_4_3.pdf](PDF/Section4/Sec_4_3.pdf) |
+|       | [Sec_4_3.md](Sec_4_1.md) |                                          |  [Sec_4_3.R](Codes/Section1/Sec_4_3.R) |[Sec_4_3.pdf](PDF/Section4/Sec_4_3.pdf) |
 
 </div>
 
